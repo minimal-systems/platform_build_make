@@ -10,3 +10,7 @@ $(DEFAULT_GOAL): linux_targets
 
 .PHONY: linux_targets
 linux_targets:
+
+# Set up various standard variables based on configuration
+# and host information.
+include build/make/core/config.mk
