@@ -13,3 +13,5 @@ include $(BUILD_SYSTEM_COMMON)/core.mk
 FORCE:
 
 ORIGINAL_MAKECMDGOALS := $(MAKECMDGOALS)
+
+UNAME := $(shell uname -sm)
