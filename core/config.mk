@@ -17,3 +17,11 @@ ORIGINAL_MAKECMDGOALS := $(MAKECMDGOALS)
 UNAME := $(shell uname -sm)
 
 SRC_TARGET_DIR := $(TOPDIR)build/make/target
+
+# Set up efficient math functions which are used in make.
+# Here since this file is included by envsetup as well as during build.
+include $(BUILD_SYSTEM_COMMON)/math.mk
+
+include $(BUILD_SYSTEM_COMMON)/strings.mk
+
+include $(BUILD_SYSTEM_COMMON)/json.mk
