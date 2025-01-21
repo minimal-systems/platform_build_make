@@ -7,3 +7,9 @@ BUILD_SYSTEM :=$= build/make/core
 BUILD_SYSTEM_COMMON :=$= build/make/common
 
 include $(BUILD_SYSTEM_COMMON)/core.mk
+
+# Used to force goals to build.  Only use for conditionally defined goals.
+.PHONY: FORCE
+FORCE:
+
+ORIGINAL_MAKECMDGOALS := $(MAKECMDGOALS)
