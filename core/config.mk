@@ -15,3 +15,5 @@ FORCE:
 ORIGINAL_MAKECMDGOALS := $(MAKECMDGOALS)
 
 UNAME := $(shell uname -sm)
+
+SRC_TARGET_DIR := $(TOPDIR)build/make/target
